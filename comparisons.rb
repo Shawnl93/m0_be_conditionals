@@ -18,29 +18,51 @@ string_teachers = "4"
 numberDogs = 0
 
 # EXAMPLE: print the result of the comparison: is number_seachers greater than number_students?
+
 puts "Is number_teachers greater than number_students?", number_teachers > number_students
 # this should print: "Is numberTeachers greater than numberStudents?" false
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
 # this should print: true
 
+puts "Is number_teacher less than number_students?",
+number_teachers < number_students
+
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
 # this should print: false
+
+puts "is number_teachers equal to string_teachers?",
+number_teachers == string_teachers
 
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
 # this should print: true
 
+puts "is number_teachers not equal to number_students?",
+number_teachers != number_students
+
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
 # this should print: true
+
+puts "is number_students greater than or equal to 20?",
+number_students >= 20
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
 # this should print: false
 
+puts "is number_students greater than or equal to 21?",
+number_students >= 21
+
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
 # this should print: true
 
+is number_students less than or equal to 20?
+true
+
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
 # this should print: true
+
+puts "is number_students less than or equal to 21",
+number_students <= 21
 
 
 #-------------------
@@ -54,21 +76,21 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 
 puts 4 < 9
 #YOU DO: Explain.
-
+# will print a true statement because 4 is less than 9
 books = 3
 puts 4 < books
 # YOU DO: Explain.
-
+# will print a false statement becaue book = 3 and 4 is greater than 3
 friends = 6
 siblings = 2
 puts friends > siblings
 # YOU DO: Explain.
-
+# will print a true statement because 6 is greater than 2
 attendees = 9
 meals = 8
 puts attendees != meals
 # YOU DO: Explain.
-
+#will print a true statement because 9 does not equal 8
 
 #-------------------
 # PART 3: Logical Operators
@@ -90,15 +112,16 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
-
+# this will be true because the dog does love to play and loves treats
+loves_to_play && loves_treats
 # Determine if the dog loves to play and loves the dog park
-
-
+# this will be false because the dog loves to play but does not like dog park
+loves_to_play && loves_dog_park
 # Determine if the dog loves to play or loves the dog park
-
-
+# this will be true because only 1 need to be true. and doesnt like dog park
+loves_to_play || loves_dog_park
 # Determine if the dog loves to play and is a puppy
+loves_to_play && age<1
 
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER:false because they love to play but is not a puppy? unless puppy age is past 1
